@@ -1,7 +1,7 @@
 // import { sequelize } from "./model"
 import { sequelize } from "./db/dbConnection";
 import { app, port } from "./app";
-// import mongoConnection from "./db/mongoConnection"; "../src/db/mongoConnection"
+import mongoConnection from "./db/mongoConnection"; "../src/db/mongoConnection"
 
 async function main() {
   
@@ -17,7 +17,7 @@ async function main() {
     console.log(`Server running at ${port} port`);
   });
 
-  // mongoConnection
+  mongoConnection
 }
 
 main();
